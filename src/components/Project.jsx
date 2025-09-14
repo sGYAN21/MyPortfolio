@@ -15,9 +15,14 @@ const Project = ({
     <>
       <div
         className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview(image)}
-        onMouseLeave={() => setPreview(null)}
+        onMouseEnter={() => {
+          if (window.innerWidth >= 640) setPreview(image);
+        }}
+        onMouseLeave={() => {
+          if (window.innerWidth >= 640) setPreview(null);
+        }}
       >
+
         <div>
           <p className="text-2xl">{title}</p>
           <div className="flex gap-5 mt-2 text-sand">

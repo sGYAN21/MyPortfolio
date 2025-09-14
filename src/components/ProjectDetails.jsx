@@ -1,4 +1,8 @@
 import { motion } from "motion/react";
+import { useEffect, useState } from "react";
+
+
+
 const ProjectDetails = ({
   title,
   description,
@@ -8,12 +12,23 @@ const ProjectDetails = ({
   href,
   closeModal,
 }) => {
+     const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 639px)"); // Tailwind 'sm' is min-width: 640px
+    setIsSmallScreen(mediaQuery.matches);
+
+    const handler = (e) => setIsSmallScreen(e.matches);
+    mediaQuery.addEventListener("change", handler);
+
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div
         className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={isSmallScreen? false:{ opacity: 0, scale: 0.5 }}
+        animate={isSmallScreen? false:{ opacity: 1, scale: 1 }}
       >
         <button
           onClick={closeModal}
@@ -41,7 +56,7 @@ const ProjectDetails = ({
             </div>
             <a  className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation " href={href}>
               View Project{" "}
-              <img src="assets/arrow-up.svg" className="size-4"  />
+              <img src="assets/arrow-up.svg" className="size-4"/>
             </a>
           </div>
         </div>
