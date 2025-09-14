@@ -70,7 +70,7 @@ const Navbar = () => {
       {/* Mobile Nav */}
       {isOpen && (
         <motion.div
-          className="sm:hidden bg-primary/70 backdrop-blur-md text-center"
+          className="sm:hidden bg-primary/88 backdrop-blur-md text-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

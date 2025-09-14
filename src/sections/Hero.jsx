@@ -27,7 +27,7 @@ const Hero = () => {
             <Float>
               <Astronaut
                 scale={isMobile ? [0.87, 1, 1] : [0.77, 0.88 ,0.88]}
-                position={isMobile ? [0, -0.8, 0.1] : [1, -0.2, 0.5]}
+                position={isMobile ? [-0.1, -0.7, 0.1] : [1, -0.2, 0.5]}
               />
               <Rig />
             </Float>

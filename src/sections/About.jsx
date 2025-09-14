@@ -14,7 +14,7 @@ const About = () => {
           <img
             src="assets/main-img.jpg"
             // className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
-            className="absolute inset-0 w-full h-full object-cover object-[50%_10%] sm:object-[50%_20%] md:object-[50%_30%]"
+            className="absolute inset-0 w-full h-full object-cover object-[50%_30%] sm:object-[50%_30%] md:object-[50%_40%]"
           />
           <div className="z-10">
             <p className="headtext font-extrabold">Hi, I'm Gyan Sagar</p>
