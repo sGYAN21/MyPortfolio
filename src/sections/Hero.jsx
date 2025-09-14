@@ -20,12 +20,14 @@ const Hero = () => {
         className="absolute inset-0"
         style={{ width: "100vw", height: "100vh" }}
       >
-        <Canvas camera={{ position: [0, 1, 4] }}>
+        <Canvas camera={{ position: [0.5, 1.1, 5] }}>
+          <ambientLight intensity={1.3} />
+          <directionalLight position={[0.2, 5.8, 5]} intensity={1.2} />
           <Suspense fallback={<Loader />}>
             <Float>
               <Astronaut
-                scale={isMobile && 0.25}
-                position={isMobile && [0, -1.5, 0]}
+                scale={isMobile ? [0.87, 1, 0.8] : [0.9, 1 ,0.8]}
+                position={isMobile ? [0, 0.8, 0.1] : [1.3, 1.5, 0.5]}
               />
               <Rig />
             </Float>
