@@ -7,7 +7,7 @@ export const myProjects = [
     subDescription: ["A static clone of the Netflix homepage designed using only HTML and CSS. This project replicates the layout, styling, and visual elements of the original Netflix landing page, showcasing responsive design, modern UI components, and clean code structure. Perfect for demonstrating front-end development and web design skills."
       ,
     ],
-    href: "",
+    href: "https://github.com/sGYAN21/Netflix-Clone.git",
     logo: "",
     image: "/assets/projects/netflix.png",
     tags: [
@@ -31,7 +31,7 @@ export const myProjects = [
     subDescription: [
       "This responsive travel website webpage showcases an engaging user interface built with HTML, CSS, and JavaScript. It features dynamic content, smooth animations, and a user-friendly layout designed to enhance the travel planning experience.",
     ],
-    href: "",
+    href: "https://sgyan21.github.io/Travel-Website/",
     logo: "",
     image: "/assets/projects/travel_responsive.png",
     tags: [
@@ -61,7 +61,7 @@ export const myProjects = [
     subDescription: [
       "A fully functional Myntra clone developed using HTML, CSS, and JavaScript. This project replicates the core features of the popular fashion e-commerce site, including interactive UI elements, product listings, responsive design, and basic cart functionality.",
     ],
-    href: "",
+    href: "https://github.com/sGYAN21/Myntra-Functional-Clone.git",
     logo: "",
     image: "/assets/projects/myntra_clone.png",
     tags: [
@@ -90,7 +90,7 @@ export const myProjects = [
       "A full-featured travel platform built using MongoDB, Express.js, React, and Node.js.",
     subDescription: ["This platform allows users to explore and book trips, reserve hotels, share travel blogs, and manage their accounts securely with login/logout functionality. A full-stack Travel Website built using the MERN stack (MongoDB, Express.js, React, Node.js).",
     ],
-    href: "",
+    href: "https://github.com/sGYAN21/Travel_Website_Project",
     logo: "",
     image: "/assets/projects/travel_node.png",
     tags: [
@@ -126,7 +126,7 @@ export const myProjects = [
       "Built with React and Vite for fast performance, styled with Tailwind CSS for clean and responsive design, and enhanced with smooth animations using Framer Motion.",
       "Includes dynamic 3D visuals powered by Cobe to create an engaging and unique user experience",
     ],
-    href: "",
+    href: "https://my-portfolio-two-wine-72.vercel.app/",
     logo: "",
     image: "/assets/projects/portfolio.png",
     tags: [
@@ -160,6 +160,48 @@ export const myProjects = [
         name:"EmailJS",
         path: "/assets/logos/emailjs.svg"
       },
+    ],
+  },
+  {
+    id: 6,
+    title: "AI Interview Prepartion | MockTalk",
+    description:
+      "Developed an interactive web application that simulates AI-driven voice interviews.",
+    subDescription: [
+      "A modern, interactive developer portfolio showcasing projects, skills, and experience.",
+      "Built with React and Vite for fast performance, styled with Tailwind CSS for clean and responsive design, and enhanced with smooth animations using Framer Motion.",
+      "Includes dynamic 3D visuals powered by Cobe to create an engaging and unique user experience",
+    ],
+    href: "https://ai-interview-prepartion.vercel.app/",
+    logo: "",
+    image: "/assets/projects/ai_interview.png",
+    tags: [
+      {
+        id: 1,
+        name: "NextJS",
+        path: "/assets/logos/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "Vapi",
+        path: "/assets/logos/vapi.svg",
+      },
+      {
+        id: 4,
+        name: "Firebase",
+        path: "/assets/logos/firebase.svg",
+      },
+      {
+        id: 5,
+        name:"Gemini",
+        path: "/assets/logos/gemini.svg"
+      },
+      
     ],
   },
 ];
