@@ -1,26 +1,45 @@
 import { useState } from "react";
-import { motion } from "framer-motion"; // ✅ correct import
+import { motion } from "framer-motion";
 
-function Navigation() {
+function Navigation({ closeMenu }) {
   return (
     <ul className="nav-ul font-bold text-lg flex flex-col gap-4 sm:flex-row sm:gap-8">
       <li className="nav-li">
-        <a className="nav-link hover:text-primary transition-colors" href="#home">
+        <a
+          href="#home"
+          onClick={closeMenu}
+          className="nav-link hover:text-primary transition-colors"
+        >
           Home
         </a>
       </li>
+
       <li className="nav-li">
-        <a className="nav-link hover:text-primary transition-colors" href="#about">
+        <a
+          href="#about"
+          onClick={closeMenu}
+          className="nav-link hover:text-primary transition-colors"
+        >
           About
         </a>
       </li>
+
       <li className="nav-li">
-        <a className="nav-link hover:text-primary transition-colors" href="#work">
+        <a
+          href="#experiences"
+          onClick={closeMenu}
+          className="nav-link hover:text-primary transition-colors"
+        >
           Work
         </a>
       </li>
+
       <li className="nav-li">
-        <a className="nav-link hover:text-primary transition-colors" href="#contact">
+        <a
+          href="#contact"
+          onClick={closeMenu}
+          className="nav-link hover:text-primary transition-colors"
+        >
           Contact
         </a>
       </li>
@@ -31,17 +50,24 @@ function Navigation() {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <div className="fixed inset-x-0 z-20 w-full h-16 backdrop-blur-lg bg-primary/50">
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo + Brand */}
           <div className="flex items-center gap-3">
-            <a href="#" className="w-10 h-auto hover:scale-110 transition-transform">
+            <a
+              href="#home"
+              className="w-10 h-auto hover:scale-110 transition-transform"
+              onClick={closeMenu}
+            >
               <img src="assets/myLogo2.svg" alt="myLogo" />
             </a>
             <a
-              href="#"
+              href="#home"
+              onClick={closeMenu}
               className="text-2xl font-extrabold transition-colors text-neutral-400 hover:text-white hover:scale-105"
             >
               GYAN SAGAR
@@ -76,7 +102,7 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         >
           <nav className="py-5">
-            <Navigation />
+            <Navigation closeMenu={closeMenu} />
           </nav>
         </motion.div>
       )}
