@@ -35,8 +35,12 @@ export const TimeLine = ({ data }) => {
               <div className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-[15px] bg-midnight">
                 <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
               </div>
-              <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-4xl text-neutral-300">
-                <h3>{item.date}</h3>
+              <div className="flex-col hidden gap-2 text-lg font-bold md:flex md:pl-20 md:text-4xl text-neutral-300">
+                <div>
+                <p className="text-3xl">
+                  {item.date}
+                  </p>
+                </div>
                 <h3 className="text-3xl text-neutral-400">{item.title}</h3>
                 <h3 className="text-3xl text-neutral-500">{item.job}</h3>
               </div>

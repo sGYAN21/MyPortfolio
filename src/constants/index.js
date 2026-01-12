@@ -164,6 +164,75 @@ export const myProjects = [
   },
   {
     id: 6,
+    title: "Music Web App",
+description:
+  "Developed a modern and interactive web application with a focus on smooth user experience and visual appeal.",
+
+subDescription: [
+  "A responsive and user-friendly web application showcasing a clean layout and intuitive navigation.",
+  "Built with Next.js for optimized performance and routing, styled using Tailwind CSS for a consistent and mobile-first design.",
+  "Enhanced the interface with interactive components and smooth animations using the Aceternity UI library."
+],
+    href: "https://github.com/sGYAN21/music_app",
+    logo: "",
+    image: "/assets/projects/music_web.png",
+    tags: [
+      {
+        id: 1,
+        name: "NextJS",
+        path: "/assets/logos/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id:3,
+        name : "Aceternity Library",
+         path: "/assets/logos/aceternity.svg",
+      }  
+    ],
+  },
+    {
+    id: 7,
+    title: "Shopsy | Ecommerce Website",
+description:
+  "Developed a modern and interactive web application with a focus on smooth user experience and visual appeal.",
+
+subDescription: [
+  "A responsive and user-friendly web application showcasing a clean layout and intuitive navigation.",
+  "Built with Next.js for optimized performance and routing, styled using Tailwind CSS for a consistent and mobile-first design.",
+  "Enhanced the interface with interactive components and smooth animations using the Aceternity UI library."
+],
+    href: "https://shopsy-ecommerce-website-gold.vercel.app/",
+    logo: "",
+    image: "/assets/projects/shopsy.png",
+    tags: [
+      {
+        id: 1,
+        name: "NextJS",
+        path: "/assets/logos/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+        path: "/assets/logos/typescript.svg",
+      },
+      {
+        id:3,
+        name : "MUI Library",
+         path: "/assets/logos/mui.svg",
+      },
+      {
+        id:4,
+        name : "Dummy API",
+         path: "/assets/logos/dummy.svg",
+      }    
+    ],
+  },
+   {
+    id: 8,
     title: "AI Interview Prepartion | MockTalk",
     description:
       "Developed an interactive web application that simulates AI-driven voice interviews.",
@@ -242,27 +311,27 @@ export const experiences = [
       "Integrated APIs to fetch and display dynamic data, improving application interactivity and functionality..",
     ],
   },
-  // {
-  //   title: "Back-End Developer",
-  //   job: "Car Manufacture",
-  //   date: "2023-2024",
-  //   contents: [
-  //     "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-  //     "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-  //     "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-  //     "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-  //     "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-  //   ],
-  // },
-  // {
-  //   title: "Freelance Developer",
-  //   job: "Self-Employed",
-  //   date: "2025-Present",
-  //   contents: [
-  //     "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-  //     "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
-  //   ],
-  // },
+  {
+    title: "Frontend Engineer Intern",
+    job: "Cybrovate",
+    date: "Oct 2025- Dec-2025",
+    contents: [
+      " Proficient in HTML, CSS, and JavaScript, ReactJS with a solid understanding of modern libraries and frameworks like React.js",
+      " Detail-oriented and passionate frontend intern with experience in building responsive, user-friendly web interfaces.",
+      " Integrated APIs to fetch and display dynamic data, improving application interactivity and functionality",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    job: "UXDLAB",
+    date: "Dec 2025 - present",
+    contents: [
+      "Developed scalable and responsive web interfaces using React.js, TypeScript, and shadcn/ui with a solid understanding of modern libraries and frameworks.",
+      "Integrated Firebase for authentication, real-time data handling, and secure application workflows",
+      "Implemented Firebase Cloud Functions to handle backend logic and automate server-side operations",
+      "Configured Nodemailer within Firebase Functions to enable transactional email notifications",
+    ],
+  },
 ];
 export const reviews = [
   {
